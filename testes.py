@@ -1,5 +1,8 @@
 import unittest
-from numerosRomanos import NumerosRomanos
+try:
+    from numerosRomanos import NumerosRomanos
+except ModuleNotFoundError:
+    from .numerosRomanos import NumerosRomanos
 
 
 romanos = ('I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV',
